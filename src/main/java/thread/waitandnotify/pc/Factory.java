@@ -6,7 +6,7 @@ public class Factory {
 
     public void pro() {
         synchronized (object) {
-            if (count > 0) {
+            while (count > 0) {
                 try {
                     System.out.println("pro wait | " + Thread.currentThread().getName());
                     object.wait();
@@ -16,13 +16,13 @@ public class Factory {
             }
             count++;
             System.out.println("pro : " + count + " | " + Thread.currentThread().getName());
-            object.notify();
+            object.notifyAll();
         }
     }
 
     public void cus() {
         synchronized (object) {
-            if (count <= 0) {
+            while (count <= 0) {
                 try {
                     System.out.println("cus wait | " + Thread.currentThread().getName());
                     object.wait();
@@ -30,11 +30,9 @@ public class Factory {
                     e.printStackTrace();
                 }
             }
-            if(count > 0) {
                 count--;
                 System.out.println("cus : " + count + " | " + Thread.currentThread().getName());
-            }
-            object.notify();
+            object.notifyAll();
         }
     }
 
