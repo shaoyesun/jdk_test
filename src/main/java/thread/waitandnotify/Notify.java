@@ -1,9 +1,9 @@
 package thread.waitandnotify;
 
-public class WaitAndNotify1 extends Thread {
+public class Notify extends Thread {
     private Object object;
 
-    public WaitAndNotify1(Object object) {
+    public Notify(Object object) {
         this.object = object;
     }
 

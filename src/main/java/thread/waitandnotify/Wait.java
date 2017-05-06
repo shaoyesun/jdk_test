@@ -9,10 +9,10 @@ package thread.waitandnotify;
  * @ 6.notifyAll可以唤醒等待队列中等待同一共享资源的全部线程
  * @ 7.有参数wait可以自己到时唤醒，亦可以由别的线程唤醒
  */
-public class WaitAndNotify extends Thread {
+public class Wait extends Thread {
     private Object object;
 
-    public WaitAndNotify(Object object) {
+    public Wait(Object object) {
         this.object = object;
     }
 

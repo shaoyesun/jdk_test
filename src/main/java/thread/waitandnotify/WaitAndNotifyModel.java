@@ -6,9 +6,9 @@ package thread.waitandnotify;
 public class WaitAndNotifyModel {
     public static void main(String[] args) {
         Object object = new Object();
-        WaitAndNotify wn = new WaitAndNotify(object);
-        wn.start();
-        WaitAndNotify1 wn1 = new WaitAndNotify1(object);
-        wn1.start();
+        Wait wait = new Wait(object);
+        wait.start();
+        Notify notify = new Notify(object);
+        notify.start();
     }
 }
