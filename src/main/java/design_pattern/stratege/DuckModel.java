@@ -1,10 +1,11 @@
 package design_pattern.stratege;
 
 /**
- *   @ 策略模式中有三个对象
- *   @ 环境对象(Context)：该类中实现了对抽象策略中定义的接口或者抽象类的引用。
- *   @ 抽象策略对象(Strategy)：它可由接口或抽象类来实现。
- *   @ 具体策略对象(ConcreteStrategy)：它封装了实现同不功能的不同算法
+ *   @  策略模式中有三个对象
+ *   @ 环境对象(Context)：该类中实现了对抽象策略中定义的接口或者抽象类的引用。Duck
+ *   @ 抽象策略对象(Strategy)：它可由接口或抽象类来实现。SwimmingStratege
+ *   @ 具体策略对象(ConcreteStrategy)：它封装了实现同不功能的不同算法 SwimmingWithFoot
+ *   @ 具体注入对象 YellowDuck
  */
 public class DuckModel {
 
