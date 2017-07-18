@@ -1,8 +1,5 @@
 package design_pattern.proxy.dynamic_proxy;
 
-import design_pattern.proxy.static_proxy.CarMoveProxy;
-import design_pattern.proxy.static_proxy.Moveable;
-
 import java.lang.reflect.Proxy;
 
 /**
@@ -10,13 +7,13 @@ import java.lang.reflect.Proxy;
  */
 public class Model {
     public static void main(String[] args) {
-        CarMoveProxy car = new CarMoveProxy();
-        Class c = car.getClass();
+        MoveImpl move = new MoveImpl();
+        Class c = move.getClass();
 
-        TimeHandler t = new TimeHandler(car);
-        Moveable m = (Moveable) Proxy.newProxyInstance(c.getClassLoader(), c.getInterfaces(), t);
+        TimeHandler t = new TimeHandler(move);
+        Move m = (Move) Proxy.newProxyInstance(c.getClassLoader(), c.getInterfaces(), t);
         LogHandler l = new LogHandler(m);
-        Moveable m1 = (Moveable) Proxy.newProxyInstance(c.getClassLoader(), c.getInterfaces(), l);
+        Move m1 = (Move) Proxy.newProxyInstance(c.getClassLoader(), c.getInterfaces(), l);
         m1.move();
     }
 }

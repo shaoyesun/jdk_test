@@ -1,13 +1,13 @@
-package design_pattern.proxy.static_proxy;
+package design_pattern.proxy.static_proxy.aggregate;
 
 /**
  * Created by Administrator on 2017/3/12.
  */
-public class LogProxy implements Moveable {
+public class LogProxy implements Move {
 
-    private Moveable obj;
+    private Move obj;
 
-    public LogProxy(Moveable obj) {
+    public LogProxy(Move obj) {
         this.obj = obj;
     }
 

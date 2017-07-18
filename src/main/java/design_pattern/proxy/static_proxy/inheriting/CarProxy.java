@@ -1,11 +1,11 @@
-package design_pattern.proxy.static_proxy;
+package design_pattern.proxy.static_proxy.inheriting;
 
 import java.util.Date;
 
 /**
  * 利用继承实现静态代理
  */
-public class Car1 extends CarMoveProxy {
+public class CarProxy extends MoveImpl {
     @Override
     public void move() {
         long start_time = new Date().getTime();
