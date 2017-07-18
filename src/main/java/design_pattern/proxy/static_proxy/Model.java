@@ -4,7 +4,7 @@ package design_pattern.proxy.static_proxy;
 /**
  * Created by Administrator on 2017/3/12.
  */
-public class Client {
+public class Model {
     public static void main(String[] args) {
         //利用继承实现静态代理
         /*Car1 car1 = new Car1();

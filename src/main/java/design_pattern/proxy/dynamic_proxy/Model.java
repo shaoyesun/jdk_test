@@ -8,7 +8,7 @@ import java.lang.reflect.Proxy;
 /**
  * 测试jdk动态代理迭代使用
  */
-public class Test {
+public class Model {
     public static void main(String[] args) {
         CarMoveProxy car = new CarMoveProxy();
         Class c = car.getClass();

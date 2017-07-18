@@ -1,7 +1,7 @@
 package design_pattern.template;
 
 /**
- * 抽象模版类和一个final模板方法
+ * 要点：抽象模版类和一个final模板方法
  */
 public class Model {
 
