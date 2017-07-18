@@ -3,7 +3,7 @@ package design_pattern.factory;
 /**
  * Created by Administrator on 2017/3/21.
  */
-public class test {
+public class Model {
     public static void main(String[] args) {
         AnimalFactory af = new AnimalFactory();
         Animal a = af.getAnimalByClassName("design_pattern.factory.Cat");
