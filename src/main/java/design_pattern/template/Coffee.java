@@ -9,6 +9,6 @@ public class Coffee extends RefreshTemplate {
     }
 
     protected void addCondiments() {
-        System.out.println("向咖啡中加入牛奶牛奶和糖");
+        System.out.println("向咖啡中加入牛奶和糖");
     }
 }
