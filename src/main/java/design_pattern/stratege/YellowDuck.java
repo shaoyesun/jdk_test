@@ -1,7 +1,5 @@
 package design_pattern.stratege;
 
-import design_pattern.stratege.swimming.SwimmingWithWind;
-
 /**
  * Created by Administrator on 2017/7/5.
  */

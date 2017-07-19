@@ -1,6 +1,4 @@
-package design_pattern.stratege.swimming;
-
-import design_pattern.stratege.SwimmingStratege;
+package design_pattern.stratege;
 
 /**
  * Created by Administrator on 2017/7/5.

@@ -7,7 +7,7 @@ package design_pattern.stratege;
  *   @ 具体策略对象(ConcreteStrategy)：它封装了实现同不功能的不同算法 SwimmingWithFoot
  *   @ 具体注入对象 YellowDuck
  */
-public class DuckModel {
+public class Model {
 
     public static void main(String[] args) {
         Duck duck = new RealDuck();
