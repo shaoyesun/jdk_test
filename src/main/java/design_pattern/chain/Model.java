@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * Created by Administrator on 2017/7/7.
  */
-public class Customer {
+public class Model {
 
     private PriceHandle priceHandle;
 
@@ -18,7 +18,7 @@ public class Customer {
     }
 
     public static void main(String[] args) {
-        Customer customer = new Customer();
+        Model customer = new Model();
         customer.setPriceHandle(PriceHandle.createPriceHandle());
         Random random = new Random();
         for(int i = 0; i < 100; i++) {
