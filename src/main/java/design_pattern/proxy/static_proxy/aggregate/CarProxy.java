@@ -5,11 +5,11 @@ import java.util.Date;
 /**
  * Created by Administrator on 2017/3/12.
  */
-public class CarPropxy extends MoveImpl {
+public class CarProxy extends MoveImpl {
 
     private MoveImpl car;
 
-    public CarPropxy(MoveImpl car) {
+    public CarProxy(MoveImpl car) {
         this.car = car;
     }
 
