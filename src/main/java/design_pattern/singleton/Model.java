@@ -6,7 +6,7 @@ import design_pattern.singleton.lanhan.LanhanSingleton;
 /**
  * Created by Administrator on 2017/3/21.
  */
-public class test {
+public class Model {
     public static void main(String[] args) {
         EhanSingleton e1 = EhanSingleton.getInstance();
         EhanSingleton e2 = EhanSingleton.getInstance();
