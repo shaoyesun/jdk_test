@@ -18,6 +18,7 @@ public class TimeHandler implements InvocationHandler {
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         long start_time = new Date().getTime();
         System.out.println("汽车开始运行......");
+        //System.out.println("method = " + method.getName());
         method.invoke(obj);
         long end_time = new Date().getTime();
         System.out.println("汽车结束运行,运行时间：" + (end_time - start_time));
