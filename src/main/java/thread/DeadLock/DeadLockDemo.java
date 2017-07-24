@@ -6,7 +6,7 @@ package thread.DeadLock;
 public class DeadLockDemo {
     public static void main(String[] args) {
         DeadLock dt = new DeadLock();
-        dt.setUsername("a");
+        dt.setName("a");
         Thread t1 = new Thread(dt);
         t1.start();
         try {
@@ -14,7 +14,7 @@ public class DeadLockDemo {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        dt.setUsername("b");
+        dt.setName("b");//同一DeadLock实例保证线程a、b竞争的共享资源为同一对象
         Thread t2 = new Thread(dt);
         t2.start();
     }
