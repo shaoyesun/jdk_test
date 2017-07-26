@@ -1,4 +1,4 @@
-package data_structure;
+package data_structure.circular_link;
 
 /**
  * 判断链表是否为循环链表

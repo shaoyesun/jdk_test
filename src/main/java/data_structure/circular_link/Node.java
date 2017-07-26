@@ -1,4 +1,4 @@
-package data_structure;
+package data_structure.circular_link;
 
 /**
  * Created by Administrator on 2017/7/24.
