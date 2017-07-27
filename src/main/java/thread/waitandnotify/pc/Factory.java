@@ -3,7 +3,6 @@ package thread.waitandnotify.pc;
 public class Factory {
     public static int count = 0;
     Object object = new Object();
-
     public void pro() {
         synchronized (object) {
             while (count > 0) {
@@ -30,8 +29,8 @@ public class Factory {
                     e.printStackTrace();
                 }
             }
-                count--;
-                System.out.println("cus : " + count + " | " + Thread.currentThread().getName());
+            count--;
+            System.out.println("cus : " + count + " | " + Thread.currentThread().getName());
             object.notifyAll();
         }
     }
