@@ -6,7 +6,7 @@ import net.sf.cglib.proxy.MethodProxy;
 import java.lang.reflect.Method;
 
 /**
- * Created by root on 17-8-16.
+ * cglib通过MethodInterceptor接口生成代理
  */
 public class TargetInterceptor implements MethodInterceptor {
     public Object intercept(Object o, Method method, Object[] params, MethodProxy methodProxy) throws Throwable {

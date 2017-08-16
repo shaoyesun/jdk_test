@@ -15,6 +15,7 @@ public class Model {
         enhancer.setSuperclass(TargetObject.class);
         enhancer.setCallback(new TargetInterceptor());
         TargetObject to = (TargetObject) enhancer.create();
+        //System.out.println(to.toString());
         to.method1("cglib");
     }
 }
