@@ -8,11 +8,11 @@ import java.lang.reflect.Method;
 /**
  * cglib通过MethodInterceptor接口生成代理
  */
-public class TargetInterceptor implements MethodInterceptor {
+public class TargetInterceptor2 implements MethodInterceptor {
     public Object intercept(Object o, Method method, Object[] params, MethodProxy methodProxy) throws Throwable {
-        System.out.println("调用前");
+        System.out.println("TargetInterceptor2:调用前");
         Object result = methodProxy.invokeSuper(o, params);
-        System.out.println("调用后");
+        System.out.println("TargetInterceptor2:调用后");
         return result;
     }
 }

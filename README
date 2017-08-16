@@ -1,2 +1,15 @@
 用于jdk学习
 1、设计模式 design_pattern
+    1)代理模式
+        jdk动态代理:design_pattern.proxy.dynamic_proxy
+        cglib动态代理:design_pattern.proxy.cglib
+    2)工厂模式
+        design_pattern.factory
+    3)责任连模式
+        design_pattern.chain
+    4)策略模式
+        design_pattern.stratege
+    5)模板模式
+        design_pattern.template
+    6)单例模式
+        design_pattern.singleton
