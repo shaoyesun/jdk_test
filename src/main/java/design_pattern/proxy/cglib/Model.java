@@ -11,7 +11,7 @@ import net.sf.cglib.proxy.Enhancer;
  */
 public class Model {
     public static void main(String[] args) {
-        Enhancer enhancer = new Enhancer();
+        Enhancer enhancer = new Enhancer();//CGLib中的一个字节码增强器，它可以方便的对你想要处理的类进行扩展
         enhancer.setSuperclass(TargetObject.class);
         enhancer.setCallback(new TargetInterceptor());
         TargetObject to = (TargetObject) enhancer.create();
