@@ -6,7 +6,7 @@ import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.NoOp;
 
 /**
- * 示例cglib动态代理
+ * 示例cglib动态代理,原理对目标类进行了重写
  *
  * @ 1.使用CGLib实现动态代理，完全不受代理类必须实现接口的限制，
  * @ 2.而且CGLib底层采用ASM字节码生成框架，使用字节码技术生成代理类，比使用Java反射效率要高。
