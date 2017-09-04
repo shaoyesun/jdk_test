@@ -3,12 +3,15 @@ package collection;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 
 /**
  * Created by Administrator on 2017/7/27.
  */
 public class MapTest {
     public static void main(String[] args) {
+        ConcurrentMap cmap = new ConcurrentHashMap();
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("1", 1);
         map.put("2", 2);
