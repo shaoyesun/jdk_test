@@ -18,6 +18,17 @@ public class ThreadLocalTest {
         return seqNum.get();
     }
 
+    private static  ThreadLocal<Integer> index = new ThreadLocal<Integer>() {
+        public Integer initialValue() {
+            return 0;
+        }
+    };
+
+    public int getIndex() {
+        index.set(index.get() + 1);
+        return index.get();
+    }
+
     public static void main(String[] args) {
         ThreadLocalTest sn = new ThreadLocalTest();
         // ③ 3个线程共享sn，各自产生序列号
@@ -40,7 +51,7 @@ public class ThreadLocalTest {
             for (int i = 0; i < 3; i++) {
                 // ④每个线程打出3个序列值
                 System.out.println("thread[" + Thread.currentThread().getName() + "] --> sn["
-                        + sn.getNextNum() + "]");
+                        + sn.getNextNum() + "]" + " " + sn.getIndex());
             }
         }
     }
