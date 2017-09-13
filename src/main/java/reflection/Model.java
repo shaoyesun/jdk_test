@@ -7,6 +7,14 @@ public class Model {
     private Long id;
     private String name;
 
+    public Model() {
+    }
+
+    public Model(String name) {
+        System.out.println(name);
+        this.name = name;
+    }
+
     public Long getId() {
         return id;
     }
